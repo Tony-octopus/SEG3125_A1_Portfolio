@@ -9,7 +9,8 @@ const PROJECTS = [
     title: 'Bike Repair',
     summary: 'A bike repair portal featuring scheduling, custom maintenance + pricing, and highly-refined responsive layouts.',
     image: '/images/bike_repair_website.png',
-    tech: 'React • LocalStorage • TBD'
+    tech: 'React • LocalStorage • TBD',
+    url: 'https://seg3125bikerepair.netlify.app/'
   },
   {
     id: 'memorygame',
@@ -39,7 +40,6 @@ function App() {
   const [copiedText, setCopiedText] = useState(null);
 
   // Smooth scroll helper 
-
   /*
   resources used: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
   https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout
@@ -169,7 +169,13 @@ function App() {
               <div 
                 key={project.id} 
                 className="project-card"
-                onClick={() => setActiveProject(project.id)}
+                onClick={() => {
+                  if (project.url) {
+                    window.open(project.url, '_blank', 'noopener,noreferrer');
+                  } else {
+                    setActiveProject(project.id);
+                  }
+                }}
               >
                 <img src={project.image} className="project-image" alt={project.title} />
                 <div className="project-overlay">
