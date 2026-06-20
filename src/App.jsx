@@ -17,7 +17,8 @@ const PROJECTS = [
     title: 'Memory Game',
     summary: 'An interactive card-matching game built with state-management and active score tracking.',
     image: '/images/memory_game_website.png',
-    tech: 'React State • TBD • TBD'
+    tech: 'React State • TBD • TBD',
+    url: 'https://memorygamea3.netlify.app/'
   }, 
   {
     id: 'ecommerce',
