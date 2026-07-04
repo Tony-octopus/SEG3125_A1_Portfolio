@@ -25,7 +25,8 @@ const PROJECTS = [
     title: 'Evil E-Commerce',
     summary: 'A high-speed retail platform with smooth page transitions, checkout micro-animations, and other stuff',
     image: '/images/e_commerce_website.png',
-    tech: 'Vite • TBD • TBD'
+    tech: 'Vite • TBD • TBD',
+    url: 'https://treehaven.netlify.app/'
   },
   {
     id: 'analytics',
