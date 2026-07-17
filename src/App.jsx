@@ -33,7 +33,8 @@ const PROJECTS = [
     title: 'Larp Analytics',
     summary: 'Chud larp detection through larp visualization dashboard with high-performance charts, predictions, etc.',
     image: '/images/analytics_website.png',
-    tech: 'React • TBD • TBD'
+    tech: 'React • TBD • TBD',
+    url: 'https://foodthing.netlify.app/'
   }
 ];
 
